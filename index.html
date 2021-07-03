@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Etch-A-Sketch</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+        <link href="styles/reset.css" rel="stylesheet">
+        <link href="styles/styles.css" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+        <script defer src="javascript/main.js"></script>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="container-child-one">
+                <button id="erase-btn" class="btn">Eraser</button>
+                <button id="rainbow-btn" class="btn">Rainbow</button>
+                <button id="grayscale-btn" class="btn">Gray Scale</button>
+                <input class="color-selector" type="color" value="#000000">
+            </div>
+
+            <div class="container-child-two">
+                <h1>Etch-A-Sketch</h1>
+
+                <div class="pixel-grid">
+                </div>
+
+                <div class="alt-grid-options-menu">
+                    <button id="alt-clear-btn" class="btn">Clear Grid</button>
+                    <button id="alt-rainbow-btn" class="btn">Rainbow</button>
+                    <button id="black-btn" class="btn">Black</button>
+                </div>
+            </div>
+
+            <div class="container-child-three">
+                <div class="grid-size-selector">
+                    <p>Grid Size</p>
+                    <input type="range" min="1" max="100" value="16" class="range-slider">
+                    <button id="rangeslider-value-apply" class="">Apply</button>
+                    <p id="current-rangeslider-value">Current Size: 16</p>
+                </div>
+
+                <button id="clear-btn" class="btn">Clear Grid</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by <a href="#">Francisco Wendeburg</a></p>
+        </footer>
+    </body>
+</html>
